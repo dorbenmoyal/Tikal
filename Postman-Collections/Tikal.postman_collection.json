@@ -1,0 +1,74 @@
+{
+	"id": "3c7b5a58-1716-cb00-8aa8-771f3ed9a749",
+	"name": "Tikal",
+	"description": "Tikal EX",
+	"order": [
+		"60d8f865-f0a4-4c42-4a39-e633ec272f46",
+		"c4fb108b-254b-258a-114f-180302ebdf6d"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1624989070043,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "60d8f865-f0a4-4c42-4a39-e633ec272f46",
+			"headers": "conten: application/json\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "conten",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/messaging/api/sendMessage",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1624989223036,
+			"name": "sendMessage",
+			"description": "sendMessage",
+			"collectionId": "3c7b5a58-1716-cb00-8aa8-771f3ed9a749",
+			"responses": [],
+			"rawModeData": "{\n\t\"sender\" : \"dbmm@gmail.com\",\n\t\"recipient\" : \"dbds2mm@gmail.com\",\n\t\"message\": \"This is a Message\"\n}"
+		},
+		{
+			"id": "c4fb108b-254b-258a-114f-180302ebdf6d",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:3000/messaging/api/receiveMessage/dbds2mm@gmail.com",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1624989237090,
+			"name": "receiveMessage",
+			"description": "sendMessage",
+			"collectionId": "3c7b5a58-1716-cb00-8aa8-771f3ed9a749",
+			"responses": []
+		}
+	]
+}
